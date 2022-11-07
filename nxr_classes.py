@@ -52,9 +52,6 @@ class Organisations:
                 for i in range(len(val)): # for each list element
                     if isinstance(val[i], dict): # if the list element is dictionary, walk it
                         self.walk_dict(val[i], new_dict, parent_key = key + '_' + str(i) + '_')
-                    #else:
-                    #    print("AKJSHDAKSHJDALKSHJAKSHJD")
-                    #    walk_dict(val[i], new_dict, parent_key = key + '_' + val[i] + '_')   
             else:
                 new_dict[parent_key + key] = val
 
